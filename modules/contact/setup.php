@@ -43,6 +43,4 @@ function extra_contact_enqueue_assets() {
 }
 add_action('wp_enqueue_scripts', 'extra_contact_enqueue_assets');
 
-require_once THEME_MODULES_PATH.'/contact/admin/options.php';
-
 ?>
