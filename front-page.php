@@ -1,5 +1,6 @@
-<?php
-global $extra_options, $front_page_metabox;
-the_post();
+<?php the_post(); ?>
 
-get_template_part("page-column-left");
+<h1><?php the_title(); ?></h1>
+<div class="content">
+    <?php the_content(); ?>
+</div>

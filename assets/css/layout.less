@@ -1,7 +1,7 @@
 /*********************
  *
  * BODY
- * 
+ *
  ********************/
 body {
 	background-color: @white;
@@ -11,50 +11,6 @@ body {
 #wrapper {
 	position: relative;
 	z-index: 2;
-}
-/*********************
- *
- * ARIANNE
- * 
- ********************/
-#arianne {
-	background-color: #f3f3f3;
-	height: 100px;
-	padding-top: 71px;
-	-webkit-box-shadow: inset 0px 0px 10px 0px #e5e5e5;
-	box-shadow: inset 0px 0px 10px 0px #e5e5e5;
-}
-#arianne .inner {
-	color: @pink;
-	font-size: 12px;
-	margin: auto;
-	width: 940px;
-}
-#arianne .inner > * {
-	display: inline-block;
-	line-height: 30px;
-	padding-left: 20px;
-	position: relative;
-}
-#arianne .inner a {
-	color: @dark;
-}
-#arianne .inner a:hover {
-	color: @black;
-}
-#arianne .inner > *:before {
-	content: "\2022";
-	color: #9E9D9F;
-	display: inline-block;
-	font-family: Arial, sans-serif;
-	font-size: 12px;
-	line-height: 30px;
-	position: absolute;
-	top: 0px;
-	left: 8px;
-}
-#arianne .inner > span:first-child:before {
-	display: none;
 }
 /*********************
  *
@@ -70,11 +26,11 @@ body {
 /*********************
  *
  * MAIN
- * 
+ *
  ********************/
 .main-wrapper {
 	margin: auto;
-  padding: 40px 0 0 0;
+	padding: 40px 0 0 0;
 	position: relative;
 	width: 940px;
 	min-height: 10px;
@@ -94,109 +50,22 @@ body {
 }
 /*********************
  *
- * TRIANGLES
- *
- ********************/
-.triangles {
-	background-color: red;
-	pointer-events: none;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	z-index: -1;
-	width: auto;
-	height: 100%;
-}
-.triangles > * {
-	border-style: solid;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 0;
-}
-.triangles .right {
-	border-width: 60px 0 60px 60px;
-	border-color: transparent transparent transparent #1f1f1f;
-}
-.triangles .left {
-	border-width: 60px 60px 60px 0;
-	border-color: transparent #1f1f1f transparent transparent;
-}
-.triangles .black {
-	border-right-color: @black;
-	border-left-color: @black;
-}
-.triangles .dark {
-	border-right-color: @dark;
-	border-left-color: @dark;
-}
-.triangles .grey {
-	border-right-color: @grey;
-	border-left-color: @grey;
-}
-.triangles .pink {
-	border-right-color: @pink;
-	border-left-color: @pink;
-}
-/*********************
- *
- * TOTOP
- * 
- ********************/
-.totop {
-	color: @dark;
-	display: block;
-	font-size: 12px;
-	font-weight: bold;
-	margin-top: 60px;
-	position: relative;
-	text-align: right;
-	width: 100%;
-	height: auto;
-}
-.totop:before {
-	background: @grey;
-	content: "";
-	display: block;
-	margin-top: -3px;
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	height: 5px;
-}
-.totop > span {
-	background: @white;
-	display: inline-block;
-	padding-left: 15px;
-	position: relative;
-	z-index: 2;
-}
-.totop > span .icon {
-	display: inline-block;
-	font-size: 6px;
-	margin-right: 10px;
-	vertical-align: 3px;
-}
-/*********************
- *
  * EASY CLEARING
- * 
+ *
  ********************/
 .main-wrapper:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 /*********************
  *
  * TABLETTE AND LESS
- * 
+ *
  ********************/
-@media	only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
 	/*********************
 	 * HEADER
 	 ********************/
@@ -210,12 +79,10 @@ body {
 	/*********************
 	 * NO MAIN MENU
 	 ********************/
-	#main-menu-container,
-	.sidebar .submenu {
+	#main-menu-container, .sidebar .submenu {
 		display: none;
 	}
-	#mobile-menu-container,
-	#switch-mobile-menu {
+	#mobile-menu-container, #switch-mobile-menu {
 		display: block;
 	}
 	/*********************
@@ -227,17 +94,7 @@ body {
 	/*********************
 	 * 100% WIDTH
 	 ********************/
-	#header > .wrapper,
-	#mobile-menu-container .wrapper,
-	#arianne,
-	#arianne .inner,
-	#main > .wrapper,
-	#footer .push,
-	#footer .pushs .wrapper,
-	#menu-footer,
-	#menu-footer li,
-	.main-content,
-	.sidebar {
+	#header > .wrapper, #mobile-menu-container .wrapper, #arianne, #arianne .inner, #main > .wrapper, #footer .push, #footer .pushs .wrapper, #menu-footer, #menu-footer li, .main-content, .sidebar {
 		display: block;
 		float: none;
 		margin: 0px;
@@ -256,8 +113,7 @@ body {
 	#footer .pushs {
 		padding-top: 30px;
 	}
-	#footer .pushs .push,
-	#footer .pushs .push a {
+	#footer .pushs .push, #footer .pushs .push a {
 		margin: 0;
 	}
 	#menu-footer li {
@@ -267,11 +123,11 @@ body {
 /*********************
  *
  * SMARTPHONE
- * 
+ *
  ********************/
-@media 	only screen and (max-width: 690px) {
+@media only screen and (max-width: 690px) {
 	/* HEADER THUMBNAIL */
 	.header-thumbnail img {
-		margin-left: -345px;	
+		margin-left: -345px;
 	}
 }

@@ -14,13 +14,13 @@ function _blank_tinymce($init) {
 		$style_formats = array();
 	}
 	$style_formats = array_merge($style_formats, array(
-		array(
+	   array(
 			'title'   => 'Lien bouton',
-			'inline'   => 'a',
+			'selector'   => 'a',
 			'classes' => 'link-button'
 		), array(
 			'title'   => 'Lien important',
-			'inline'   => 'a',
+			'selector'   => 'a',
 			'classes' => 'link-important'
 		), array(
 			'title'   => 'Chapô',

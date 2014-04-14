@@ -4,8 +4,7 @@
  *
  ********************/
 #switch-mobile-menu {
-	background: #3D3C3F;
-	color: #FFFFFF;
+	color: @black;
 	content: "+";
 	display: none;
 	font-size: 16px;
@@ -34,27 +33,16 @@
  *
  ********************/
 #mobile-menu-container {
-	border-right: 1px solid #ABABAB;
+	border-right: 1px solid @grey;
 	display: none;
 	overflow: auto;
 	position: fixed;
 	pointer-events: auto;
-	top: 0px;
-	left: -1px;
+	top: 0;
+	left: 0;
 	z-index: 1;
 	width: 400px;
 	max-width: 80%;
-	height: 100%;
-}
-#mobile-menu:after {
-	content: "";
-	display: block;
-	pointer-events: none;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-
-	width: 60px;
 	height: 100%;
 }
 .admin-bar #mobile-menu {
@@ -64,40 +52,27 @@
 	list-style: none;
 }
 #mobile-menu li > a {
-	background: #F3F3F3;
-	color: #3A368A;
-	border-bottom: 1px solid #C9C9C9;
+	border-bottom: 1px solid @grey;
 	display: block;
 	font-size: 14px;
-	font-weight: 700;
 	line-height: 20px;
 	padding: 10px 0 10px 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 #mobile-menu li a:hover {
-	color: #E13F70;
+	color: @highlight;
 }
 #mobile-menu li.current_page_ancestor > a {
-	color: #E13F70;
+	color: @highlight;
 }
 #mobile-menu li.current_page_item a {
-	background: #FFFFFF;
-	color: #E13F70;
+	background: @white;
+	color: @highlight;
 }
 #mobile-menu .sub-menu li a {
 	padding-left: 30px;
 }
-#mobile-menu > li.menu-item-home > a {
-	border: 0px;
-	border-bottom: 1px solid #C9C9C9;
-	text-indent: 0px;
-	width: 100%;
-}
-#mobile-menu > li.menu-item-home > a:before {
-	display: none;
-}
-
 /*********************
  * MENU IS OPEN
  ********************/
@@ -326,42 +301,5 @@
 #main-menu .menu-item-home a:hover,
 #main-menu .menu-item-home a.hover,
 #main-menu .current-menu-item.menu-item-home a {
-	color: #CA007B;
-}
-/*********************
- *
- * TRIANGLES
- *
- ********************/
-#header .triangles .triangle1 {
-	top: 0px;
-	left: -950px;
-}
-#header .triangles .triangle2 {
-	top: 180px;
-	left: -890px;
-}
-#header .triangles .triangle3 {
-	top: 180px;
-	left: -580px;
-}
-#header .triangles .triangle4 {
-	top: 120px;
-	left: -110px;
-}
-#header .triangles .triangle5 {
-	top: -60px;
-	left: 120px;
-}
-#header .triangles .triangle6 {
-	top: -60px;
-	left: 620px;
-}
-#header .triangles .triangle7 {
-	top: 60px;
-	left: 880px;
-}
-#header .triangles .triangle8 {
-	top: 180px;
-	left: 820px;
+	color: @highlight;
 }

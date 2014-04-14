@@ -1,6 +1,6 @@
-<?php
+<?php the_post(); ?>
 
-add_filter('extra_template_content', function () { return 'modules/example/front/your/path/to/your/template/content'; });
-add_filter('extra_template_sidebar', function () { return 'modules/example/front/your/path/to/your/template/sidebar'; });
-
-get_template_part('page-column-right');
+<h1><?php the_title(); ?></h1>
+<div class="content">
+    <?php the_content(); ?>
+</div>
