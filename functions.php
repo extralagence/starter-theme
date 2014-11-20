@@ -8,12 +8,12 @@
  *
  *
  *********************/
-function _blank_setup() {
+function extra_theme_setup() {
 	// MATCH EDITOR CSS
 	add_editor_style('assets/css/editor-style.less');
 }
 
-add_action('after_setup_theme', '_blank_setup');
+add_action('after_setup_theme', 'extra_theme_setup');
 /**********************
  *
  *
@@ -23,7 +23,7 @@ add_action('after_setup_theme', '_blank_setup');
  *
  *
  *********************/
-function _blank_less_vars($vars, $handle) {
+function extra_theme_less_vars($vars, $handle) {
 	$vars['font1'] = 'arial, sans-serif';
 	$vars['font2'] = 'georgia, sans-serif';
 	$vars['white'] = '#FFFFFF';
@@ -34,7 +34,7 @@ function _blank_less_vars($vars, $handle) {
 	return $vars;
 }
 
-add_filter('less_vars', '_blank_less_vars', 10, 2);
+add_filter('less_vars', 'extra_theme_less_vars', 10, 2);
 /**********************
  *
  *

@@ -1,17 +1,30 @@
 @import url('extra-content.css');
 
 html {
-  background: @dark;
-  height: 100%;
+	background: @grey;
+	height: 95%;
+}
+html:before, html:after {
+	content: '';
+	display: block;
+	height: 10px;
+	background: @white;
+	width: 500px;
+	margin: 0 auto;
 }
 body {
-  background: @white;
-  padding: 10px;
-  margin: 0 auto;
-  height: auto;
-  min-height: 100%;
-  width: 560px;
+	background: @white;
+	padding: 1px 10px;
+	margin: 0 auto;
+	height: auto;
+	min-height: 100%;
+	width: 500px;
 }
+body.wp-autoresize.content {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
 .mceContentBody hr.cleaner {
   background: red;
   clear: both;
